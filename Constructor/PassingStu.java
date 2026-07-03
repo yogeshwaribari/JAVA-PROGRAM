@@ -1,6 +1,7 @@
 /*Question 21: Write a Java program to count passing students.
 
-Description: Create Student class with name and marks. Store students. Count students having marks ? 40.
+Description: Create Student class with name and marks. Store students. Count students having
+ marks ? 40.
 INPUT:
 Amit 35
 Raj 67
@@ -11,8 +12,10 @@ OUTPUT:
 Passing Students: 2
 
 EXPLANATION:
-Create Student class with fields name and marks. Use constructor to initialize. Store 4 students in array. 
-Loop through array, check if marks >= 40. If true, increment counter. Display passing student count. 
+Create Student class with fields name and marks. Use constructor to initialize. Store 4 students
+ in array. 
+Loop through array, check if marks >= 40. If true, increment counter. Display passing student
+ count. 
 Raj (67 >= 40) and Neha (90 >= 40) are passing.*/
 import java.util.*;
 class Student

@@ -13,10 +13,10 @@ class Q43Duplicate
 			char ch=s.charAt(i);
 			for(int j=0;j<s.length();j++)
 			{
-				if(ch==s.charAt(j))
-				{
-					//str+=s.charAt(j);
-				}
+				 if(str.indexOf(ch) == -1) 
+				 {
+					 str+=ch;
+				 }
 			}
 		}
 		System.out.println("Remove duplicate :"+str);
