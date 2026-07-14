@@ -11,12 +11,18 @@ class Q43Duplicate
 		for(int i=0;i<s.length();i++)
 		{
 			char ch=s.charAt(i);
-			for(int j=0;j<s.length();j++)
+			boolean flag=false;
+			for(int j=0;j<str.length();j++)
 			{
-				 if(str.indexOf(ch) == -1) 
+				 if(ch==str.charAt(j)) 
 				 {
-					 str+=ch;
+					 flag =true;
+					 break;
 				 }
+			}
+			if(flag==false)
+			{
+				str+=ch;
 			}
 		}
 		System.out.println("Remove duplicate :"+str);
