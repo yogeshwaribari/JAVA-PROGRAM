@@ -10,7 +10,15 @@ class Q66CommonPrefix
 		System.out.println("Enter Second String");
 		String s2=xyz.nextLine();
 		String res="";
-		int len=Math.min(s1.length(),s2.length());
+		int len;
+		if(s1.length()<s2.length())
+		{
+			len=s1.length();
+		}
+	else
+	{
+		len=s2.length();
+	}
 		for(int i=0;i<len;i++)
 		{
 			if(s1.charAt(i)==s2.charAt(i))

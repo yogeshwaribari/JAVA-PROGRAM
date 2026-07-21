@@ -5,14 +5,14 @@ class Q62SubstringOccurr
 	public static void main(String x[])
 	{
 		Scanner xyz=new Scanner(System.in);
-		System.out.println("Enter String");
+		System.out.println("Enter String");//abcabc
 		String s=xyz.nextLine();
 		int cnt=0;
-		System.out.println("Enter Substring");
+		System.out.println("Enter Substring");//abc
 		String sub=xyz.nextLine();
-		for(int i=0;i<=s.length()-sub.length();i++)
+		for(int i=0;i<=s.length()-sub.length();i++)//0<=3
 		{
-			if(s.substring(i,i+sub.length()).equals(sub))
+			if(s.substring(i,i+sub.length()).equals(sub))//(0,3)
 			{
 				cnt++;
 			}
