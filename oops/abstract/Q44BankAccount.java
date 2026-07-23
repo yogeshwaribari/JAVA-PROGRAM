@@ -44,7 +44,7 @@ class SavingsAccount extends BankAccount
 	}
 	public void withdraw(int amt)
 	{
-		if(balance-amt>=500)
+		if(balance-amt>=500)//1000-700=300
 		{
 			balance-=amt;
 		}
@@ -79,9 +79,9 @@ class Q44BankAccount
 		String acc=xyz.next();
 		
 		System.out.println("Enter Initial Balance");
-		int balance=xyz.nextInt();
+		int balance=xyz.nextInt();//1000
 		System.out.println("Enter Deposit Amt");
-		int deposit=xyz.nextInt();
+		int deposit=xyz.nextInt();//100
 		System.out.println("Enter Withdraw amt");
 		int withdraw=xyz.nextInt();
 		
@@ -94,7 +94,7 @@ class Q44BankAccount
 		else{
 			b=new CurrentAccount(balance);
 		}
-		b.deposit(deposit);
+		b.deposit(deposit);//100
 		b.withdraw(withdraw);
 		b.display();
 	}
