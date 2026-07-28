@@ -30,6 +30,10 @@ class Employee
 {
 	String name;
 	int salary;
+	Employee()
+	{
+		this("unknown",0);
+	}
 	Employee(String name,int salary)
 	{
 		this.name=name;
@@ -39,6 +43,10 @@ class Employee
 class Developer extends Employee
 {
 	int bonus;
+	Developer()
+	{
+		this("unknown",0,0);
+	}
 	Developer(String name,int salary,int bonus)
 	{
 		super(name,salary);
@@ -48,6 +56,10 @@ class Developer extends Employee
 class SeniorDeveloper extends Developer
 {
 	int stockBonus;
+	SeniorDeveloper()
+	{
+		this("unknown",0,0,0);
+	}
 	SeniorDeveloper(String name,int salary,int bonus,int stockBonus)
 	{
 		super(name,salary,bonus);
