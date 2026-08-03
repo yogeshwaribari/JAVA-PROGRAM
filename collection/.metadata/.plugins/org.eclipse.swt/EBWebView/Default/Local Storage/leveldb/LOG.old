@@ -1,2 +1,3 @@
-2026/07/27-15:26:46.883 85f8 Creating DB C:\giri program\java\collection\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
-2026/07/27-15:26:47.021 85f8 Reusing MANIFEST C:\giri program\java\collection\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/08/03-10:46:46.679 1c18 Reusing MANIFEST C:\giri program\java\collection\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/08/03-10:46:46.681 1c18 Recovering log #3
+2026/08/03-10:46:46.684 1c18 Reusing old log C:\giri program\java\collection\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
