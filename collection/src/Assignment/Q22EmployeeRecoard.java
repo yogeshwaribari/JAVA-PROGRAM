@@ -138,7 +138,7 @@ public class Q22EmployeeRecoard {
 				break;
 				
 			case 4:
-				int sum=0;
+				double sum=0;
 				for(EmployeeRec e3:v)
 				{
 					sum+=e3.getSalary();
