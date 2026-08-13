@@ -24,7 +24,7 @@ abstract class Delivery
 		this.rate=rate;
 	}
 }
-class LocalDelivery extends Delivery
+class LocalDelivery extends Delivery //localdelivery
 {
 	LocalDelivery(int weight,int rate)
 	{
@@ -35,7 +35,7 @@ class LocalDelivery extends Delivery
 		System.out.println("Charges :"+(weight*rate));
 	}
 }
-class InternationalDelivery extends Delivery
+class InternationalDelivery extends Delivery //internationaldelivery
 {
 	InternationalDelivery(int weight,int rate)
 	{
