@@ -27,7 +27,7 @@ This demonstrates range checking logic using POJO encapsulation.*/
 import java.util.*;
 class RangeCheck
 {
-	private int number;
+	private int number;//private variable
 	
 	public void setNumber(int number)
 	{
