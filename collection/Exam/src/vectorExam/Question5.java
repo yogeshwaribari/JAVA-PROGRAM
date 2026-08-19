@@ -112,18 +112,22 @@ public class Question5 {
 				}
 				break;
 				
-			case 3: 
-				System.out.println("Enter Delete Id ");
-				int delid=xyz.nextInt();
-				for(EmployeeData e3:al)
-				{
-					if(e3.getId()==delid)
-					{
-						al.remove(delid);
-						
-					}
-				}
-				break;
+			case 3:
+			    System.out.println("Enter Delete Id");
+			    int delid = xyz.nextInt();
+
+			    Iterator<EmployeeData> itr = al.iterator();
+
+			    while (itr.hasNext()) {
+			        EmployeeData e3 = itr.next();
+
+			        if (e3.getId() == delid) {
+			            itr.remove();
+			            System.out.println("Employee Deleted");
+			            break;
+			        }
+			    }
+			    break;
 				
 			case 4:
 				for(EmployeeData e1:al)
