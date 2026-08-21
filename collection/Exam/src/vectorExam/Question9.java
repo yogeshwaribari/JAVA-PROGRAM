@@ -1,4 +1,4 @@
-/*Q9. Store N Words in a HashMap. Print Words whose length is prime number.
+/*Q9. Store N Words in a HashMap. Print Words whose length is prime number.  
 Input :java python sql codex spring
 Output: Words with Prime Length
 sql-3
@@ -21,7 +21,7 @@ public class Question9 {
 				{
 					cnt++;			
 			} 
-				if(cnt<=2) {
+				if(cnt==2) {
 					map.put(str[i], str[i].length());
 				}
 

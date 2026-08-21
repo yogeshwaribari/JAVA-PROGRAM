@@ -26,14 +26,12 @@ public class Q20MergeMap {
 		HashMap <Integer,Integer>map=new HashMap<>();
 		map.put(101, 500);
 		map.put(102, 700);
-		map.put(101, 500);
+		
 		
 	LinkedHashMap <Integer,Integer>map1=new LinkedHashMap<>();
 		map1.putAll(map);
 		map1.put(103, 900);
 		map1.put(104, 1200);
-		
-		//HashMap<Integer,Integer>map3=new HashMap<>();
 		
 		for(Map.Entry<Integer, Integer>m:map1.entrySet())
 		{
