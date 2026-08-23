@@ -1,4 +1,5 @@
-/*Q26.Design a Java program to manage teacher information using a Vector collection and a POJO class Teacher. The program should allow storing teacher details and performing different logical operations on the stored records.
+/*Q26.Design a Java program to manage teacher information using a Vector collection and a POJO class Teacher.
+ The program should allow storing teacher details and performing different logical operations on the stored records.
 Description
 Create a POJO class Teacher with fields:
 ● int teacherId
@@ -88,7 +89,98 @@ public class Q26Teacher {
 
 	public static void main(String[] args) {
 		Scanner xyz=new Scanner(System.in);
-		System.out.println()
+		System.out.println("Enter number of Teacher");
+		int n=xyz.nextInt();
+		Vector <Teacher> v= new Vector<>();
+		
+		do
+		{
+			System.out.println("1. Add teacher records into Vector");
+			System.out.println("2. Display all teacher details");
+			System.out.println("3. Find teacher with highest salary");
+			System.out.println("4. Search teacher by subject");
+			System.out.println("5. Count teachers whose salary is above 50000");
+			System.out.println("Enter your choice");
+			int c=xyz.nextInt();
+			switch(c)
+			{
+			case 1:
+				System.out.println("Enter ID");
+				int id=xyz.nextInt();
+				xyz.nextLine();
+				System.out.println("Enter Name");
+				String name=xyz.nextLine();
+				System.out.println("Enter Subject");
+				String subj=xyz.nextLine();
+				
+				System.out.println("Enter Salary");
+				int sal=xyz.nextInt();
+				Teacher t=new Teacher(id,name,subj,sal);
+				v.add(t);
+				System.out.println("Added Successfully");
+				break;
+				
+			case 2:
+				if(v.size()!=0)
+				{
+					for(Teacher t1:v)
+					{
+						System.out.println(t1.getId()+"\t"+t1.getName()+"\t"+t1.getSubj()+"\t"+t1.getSal());
+					}
+				}
+				else
+				{
+					System.out.println("Teacher Data not present in collection");
+				}
+				break;
+				
+			case 3:
+				Teacher max=v.get(0);
+				for(Teacher t2:v)
+				{
+					if(t2.getSal()>max.getSal())
+					{
+						max=t2;
+					}
+					
+				}
+				System.out.println("Highest Salary Teacher:");
+				System.out.println(max.getId()+"\t"+max.getName()+"\t"+max.getSubj()+"\t"+max.getSal());
+				break;
+				
+			case 4:
+				xyz.nextLine();
+				System.out.println("Search teacher by subject");
+				String sname=xyz.nextLine();
+				System.out.println(sname+" Teacher :");
+				{
+					for(Teacher t3:v)
+					{
+						if(t3.getSubj().equals(sname))
+						{
+							System.out.println(t3.getName());
+						}
+					}
+				}
+				
+				break;
+				
+			case 5:
+				int cnt=0;
+				for(Teacher t4:v)
+				{
+					if(t4.getSal()>50000)
+					{
+						cnt++;
+					}
+				}
+				System.out.println("Teachers with salary above 50000:"+cnt);
+				break;
+				
+				default:
+					System.out.println("Wrong choice");		
+			}
+		}while(true);
 
 	}
 
