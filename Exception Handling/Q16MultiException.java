@@ -16,4 +16,21 @@ using pipe (|) operator. Single catch block handles both ArithmeticException and
  import java.util.*;
  class Q16MultiException
  {
+	 public static void main(String x[])
+	 {
+		 Scanner xyz=new Scanner(System.in);
+		 System.out.println("Enter number");
+		 String n=xyz.nextLine();
+		 try
+		 {
+			 int num=Integer.parseInt(n);
+			 int c=100/num;
+			 System.out.println("Result :"+c);
+			 
+		 }
+		 catch(ArithmeticException | NumberFormatException ex)
+		 {
+			 System.out.println("Exception handled using multi catch");
+		 }
+	 }
  }
