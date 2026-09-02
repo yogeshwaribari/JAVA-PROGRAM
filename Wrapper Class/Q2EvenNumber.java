@@ -25,7 +25,7 @@ class Q2EvenNumber
 		System.out.println("Enter elements");
 		for(int i=0;i<size;i++)
 		{
-			num[i]=xyz.nextInt();
+			num[i]=xyz.nextInt();//autoboxing
 		}
 		int cnt=0;
 		for(int i=0;i<size;i++)
