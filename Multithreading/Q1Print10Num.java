@@ -34,9 +34,8 @@ class Mythread extends Thread
 		}
 		System.out.println("\nThread finished");
 	}
-}
-class Q1Print10Num
-{
+
+
 	public static void main(String x[])
 	{
 		Scanner xyz=new Scanner(System.in);
